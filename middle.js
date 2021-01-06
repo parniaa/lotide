@@ -17,11 +17,14 @@ const middle = function(array) {
   let middleArray = [];
   if (array.length <= 2) return middleArray;
   else if (array.length % 2 === 0) {
-    console.log("hi");
+    middleArray.push(array[(array.length / 2) - 1]);
+    middleArray.push(array[(array.length / 2)]);
+    return middleArray;
   } else {
-    console.log("bye");
+    middleArray.push(array[Math.floor(array.length / 2)]);
+    return middleArray;
   }
   
 };
-console.log(middle([2]));
+console.log(middle([2,3,4,4]));
 middle([1, 2]);
