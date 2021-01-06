@@ -20,5 +20,6 @@ const countLetters = function(inputSentence) {
   }
   return results;
 };
+console.log(countLetters("kkll mmll"));
 const test = countLetters("hello cuti klloo");
 assertEqual(test["l"],4);
