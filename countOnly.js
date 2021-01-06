@@ -8,25 +8,16 @@ const assertEqual = function(actual, expected) {
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (const item of allItems) {
-
-    
-    if (results[item]) {
-      results[item] += 1;
-      console.log(results[item]);
-    } else {
-      results[item] = 1;
-    }
-    if (itemsToCount[item]) { 
+    if (itemsToCount[item]) {
       if (results[item]) {
         results[item] += 1;
       } else {
         results[item] = 1;
+        // this is similar to line above  result = { `${item}`: 1}
       }
     }
   }
-
   return results;
-
 };
 
 const firstNames = [
