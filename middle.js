@@ -14,7 +14,14 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 const middle = function(array) {
-
+  let middleArray = [];
+  if (array.length <= 2) return middleArray;
+  else if (array.length % 2 === 0) {
+    console.log("hi");
+  } else {
+    console.log("bye");
+  }
+  
 };
-middle([1]) // => []
-middle([1, 2])
+console.log(middle([2]));
+middle([1, 2]);
