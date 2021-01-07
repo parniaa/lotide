@@ -29,4 +29,4 @@ const o1 = {
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 };
-findKey(o1, x => x.stars === 5); // => "noma"
+findKey(o1, x => x.stars === 2); // => "noma"
