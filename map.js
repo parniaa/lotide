@@ -20,7 +20,7 @@ const map = function(array, callback) {
     // console.log('item AFTER: ', callback(item));
     // console.log('---');
     if (item === "") {
-      results.push("")
+      results.push("");
     } else {
       results.push(callback(item));
     }
