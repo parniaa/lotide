@@ -30,3 +30,4 @@ const o1 = {
   "Akelarre":  { stars: 3 }
 };
 findKey(o1, x => x.stars === 2); // => "noma"
+assertEqual (findKey(o1, x => x.stars === 2), "noma");
