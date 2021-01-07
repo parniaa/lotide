@@ -21,8 +21,6 @@ const eqObjects = function(object1, object2) {
     }
     if (!eqArrays(object1[key], object2[key])) return false;
   }
-
-  
   return true;
 };
 const eqArrays = function(a, b) {
@@ -32,4 +30,9 @@ const eqArrays = function(a, b) {
     if (a[i] !== b[i]) return false;
   }
   return true;
+};
+
+// FUNCTION IMPLEMENTATION
+const assertObjectsEqual = function(actual, expected) {
+  // Implement me!
 };

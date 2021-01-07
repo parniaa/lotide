@@ -15,6 +15,7 @@ const eqObjects = function(object1, object2) {
   //   if (keys1[i] !== keys2[i]) return false;
   // }
   for (const key in object1) {
+    // if (!Object.prototype.hasOwnProperty(object2, key)) return  false;
     if (!object2.hasOwnProperty(key)) return  false;
     if (!Array.isArray(object1[key]) && !Array.isArray(object2[key])) {
       if (object1[key] !== object2[key]) return false;
