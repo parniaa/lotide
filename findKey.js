@@ -6,29 +6,27 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const findKey = function(inputObject, inputValue){
-
-};
-
-const findKeyByValue = function(inputObject, inputFunction) {
+const findKey = function(inputObject, inputFunction) {
+  let tempValue = "";
   for (const input in inputObject) {
-    const element = inputObject[input];
-    if (element === inputFunction(2)) {
-      return element;
-      // result = Object.keys(inputObject);
-      // console.log(result);
+    if (inputFunction(inputObject[input])) {
+      tempValue = input;
+      break;
     }
-    
   }
-  return undefined;
+  if (tempValue !== "") {
+    console.log(tempValue);
+  } else {
+     console.log(undefined);
+    }
 };
 
-
-console.log(findKey({
+const o1 = {
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
   "noma":      { stars: 2 },
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 2)); // => "noma"
+};
+findKey(o1, x => x.stars === 5); // => "noma"
