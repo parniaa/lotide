@@ -19,7 +19,16 @@ const findKeyByValue = function(inputObject, inputValue) {
   return undefined;
 };
 
-
+//Another Solution=====>
+// const findKeyByValue = function(inputObject, inputValue) {
+//   let objectKeys = Object.keys(inputObject);
+//   for (const objectK of objectKeys) {
+//     console.log(inputObject[objectK], inputValue);
+//     if (inputObject[objectK] === inputValue) {
+//       return objectK;
+//     }
+//   }
+// };
 
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
