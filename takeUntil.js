@@ -1,8 +1,12 @@
 const takeUntil = function(array, callback) {
   // ...
-  const evens = array.filter(function(num) {
-    return (num % 2 == 0);
-  });
+  let resultArray = [];
+  for (const arr of array) {
+    if (!callback(arr)) {
+      resultArray.push(arr);
+    }
+  }
+  return resultArray;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
