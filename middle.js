@@ -10,6 +10,5 @@ const middle = function(array) {
     middleArray.push(array[Math.floor(array.length / 2)]);
     return middleArray;
   }
-  
 };
 module.exports = middle;

@@ -8,6 +8,7 @@ module.exports = {
   tail,
   middle
 };
+
 // console.log(module.exports = {
 //   head,
 //   tail,

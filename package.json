@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@paarmin/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "LHL first assignmet ",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/parniaa/lotide.git"
   },
-  "author": "",
+  "author": "Armin Parnia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/parniaa/lotide/issues"
