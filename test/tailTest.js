@@ -6,7 +6,7 @@ const assert = require("chai").assert;
 // assertEqual(tail(words).length, 3);
 
 
-describe("#head", () => {
+describe("#tail", () => {
   it("returns length of 3 for [1, 2, 3]", () => {
     assert.deepEqual(tail([1, 2, 3]).length, 3);
   });
@@ -16,7 +16,4 @@ describe("#head", () => {
   it(`returns length of 1 for ["A"]`, () => {
     assert.deepEqual(tail(["A"]).length, 0);
   });
-  // it(`returns 'Hello' for ["Hello", "Lighthouse", "Labs\"]`, () => {
-  //   assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-  // });
 });
